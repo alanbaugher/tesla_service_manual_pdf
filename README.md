@@ -4,11 +4,11 @@ Covert HTML layout using tds-layout and tds-list
 
 # Challenge:
 - The Tesla site for the Model X User Manual provides a pdf download.
-- https://www.tesla.com/ownersmanual/modelx/en_us/
-- 
+- https://www.tesla.com/ownersmanual/modelx/en_us/    
+  
 - The Tesla site for the Model X Service Manual was web access only.   There was no associated PDF to download.
-- https://service.tesla.com/docs/ModelX/ServiceManual/Palladium/en-us/index.html
-- 
+- https://service.tesla.com/docs/ModelX/ServiceManual/Palladium/en-us/index.html  
+  
 
 # Resolution
 Used Chrome F12 elements to identify the side-link tags used.
