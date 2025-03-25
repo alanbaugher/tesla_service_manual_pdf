@@ -13,6 +13,8 @@ Covert HTML layout using tds-layout and tds-list
 # Resolution
 Used Chrome F12 elements to identify the side-link tags used.
 - Use ChatGPT to help build a container with the three (3) primary files [Dockerfile, package.json, index.js] contained as HEREDOC within a single bash shell script.
+- ![image](https://github.com/user-attachments/assets/7223dc70-63f1-4ba9-bf60-324e72268f6c)
+
   
 
 
