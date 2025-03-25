@@ -1,6 +1,12 @@
 # tesla_service_manual_pdf
 Covert HTML layout using tds-layout and tds-list
 
+
+# Challenge:
+- The Tesla site for the Model X User Manual provides a pdf download.
+- The Tesla site for the Model X Service Manual was web access only.   There was no associated PDF to download.
+
+# Resolution
 Used Chrome F12 elements to identify the side-link tags used.
 - Use ChatGPT to help build a container with the three primary files contained as HEREDOC within a single bash shell script.
   
