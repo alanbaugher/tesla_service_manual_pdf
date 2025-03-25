@@ -11,11 +11,11 @@ Covert HTML layout using tds-layout and tds-list
   
 
 # Resolution
-Used Chrome F12 elements to identify the side-link tags used.
+Used Chrome F12 elements to identify the side-link-tags used.
 - Use ChatGPT to help build a container with the three (3) primary files [Dockerfile, package.json, index.js] contained as HEREDOC within a single bash shell script.
 - ![image](https://github.com/user-attachments/assets/7223dc70-63f1-4ba9-bf60-324e72268f6c)
-- Observation:  Each side link tag takes 4-5 seconds to resolve.
-- Total duration: 1153 x 5s = 5765s  > 96 minutes to generate a recent PDF
+- Observation:  Each side-link-tag takes 4-5 seconds to resolve.
+- Total duration: 1153 side-link-tags x 5s = 5765s  > 96 minutes to generate a recent PDF
   
 
 
