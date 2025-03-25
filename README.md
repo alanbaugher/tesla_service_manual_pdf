@@ -6,7 +6,7 @@ Covert HTML layout using tds-layout and tds-list
 - The Tesla site for the Model X User Manual provides a pdf download.
 - https://www.tesla.com/ownersmanual/modelx/en_us/    
   
-- The Tesla site for the Model X Service Manual was web access only.   There was no associated PDF to download.
+- The Tesla site for the Model X Service Manual is web access only (03/2025).   There is no associated PDF to download.
 - https://service.tesla.com/docs/ModelX/ServiceManual/Palladium/en-us/index.html  
   
 
