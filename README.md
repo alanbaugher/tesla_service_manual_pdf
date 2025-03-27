@@ -1,6 +1,9 @@
 # tesla_service_manual_pdf
 Covert HTML layout using tds-layout and tds-list
 
+# Monitor Changes
+- https://service.tesla.com/docs/ModelX/ServiceManual/Palladium/en-us/GUID-58B67760-D8F5-4178-BA12-93ACE9831C0F.html
+
 
 # Challenge:
 - The Tesla site for the Model X User Manual provides a pdf download.
