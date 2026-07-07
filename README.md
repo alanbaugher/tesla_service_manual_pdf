@@ -28,3 +28,8 @@ Used Chrome F12 elements to identify the side-link-tags used.
 This document is large.  See below error
 
 ![image](https://github.com/user-attachments/assets/7899fd57-6208-4909-8647-9bbe725aa11f)
+
+
+Current State - more pages.  
+
+<img width="724" height="954" alt="image" src="https://github.com/user-attachments/assets/261b79a4-7b02-4f8f-98c1-6ace34a2bd5b" />
