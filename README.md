@@ -3,18 +3,19 @@
 
 
 
-# tesla_service_manual_pdf
-Covert HTML layout using tds-layout and tds-list
+# tesla_service_manual_pdf  
+Covert HTML layout using tds-layout and tds-list  
 
-# Monitor Changes
+
+# Monitor Changes  
 - https://service.tesla.com/docs/ModelX/ServiceManual/Palladium/en-us/GUID-58B67760-D8F5-4178-BA12-93ACE9831C0F.html
 
 
-# Challenge:
+# Challenge:  
 - The Tesla site for the Model X User Manual provides a pdf download.
 - https://www.tesla.com/ownersmanual/modelx/en_us/    
   
-- The Tesla site for the Model X Service Manual is web access only (03/2025).   There is no associated PDF to download.
+- The Tesla site for the Model X Service Manual is web access only (03/2025).   There is no associated PDF to download.  
 - https://service.tesla.com/docs/ModelX/ServiceManual/Palladium/en-us/index.html  
   
 
