@@ -1,4 +1,13 @@
 #!/bin/bash
+###################################################################################################################
+#
+#  Build a PDF of the Tesla Model X 2022 Service Manual 
+#     https://service.tesla.com/docs/ModelX/ServiceManual/Palladium/en-us/index.html
+#
+#  Using a specialized container and the index.html
+#
+#
+####################################################################################################################
 set -euo pipefail
 
 echo ""
@@ -49,7 +58,7 @@ echo "📦 Creating package.json..."
 cat > package.json <<'EOF'
 {
   "name": "tesla-service-manual-pdf",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "private": true,
   "scripts": {
     "start": "node index.js"
@@ -79,10 +88,6 @@ const HTML_PATH = "/data/tesla-model-x-service-manual-combined.html";
 const RUN_LOG_PATH = "/data/tesla-model-x-service-manual-run-summary.json";
 
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-function cleanText(value) {
-  return String(value || "").replace(/\s+/g, " ").trim();
-}
 
 function escapeHtml(value) {
   return String(value || "")
@@ -537,10 +542,16 @@ async function collectAssetUrls(page) {
   const pdfStarted = Date.now();
   const printPage = await browser.newPage();
 
+  printPage.setDefaultNavigationTimeout(0);
+  printPage.setDefaultTimeout(0);
+
   await printPage.setContent(combinedHtml, {
-    waitUntil: "networkidle0",
-    timeout: 120000
+    waitUntil: "domcontentloaded",
+    timeout: 0
   });
+
+  console.log("⏳ Waiting 10 seconds for images/styles to settle...");
+  await wait(10000);
 
   await printPage.pdf({
     path: PDF_PATH,
@@ -548,6 +559,7 @@ async function collectAssetUrls(page) {
     height: "11in",
     printBackground: true,
     preferCSSPageSize: true,
+    timeout: 0,
     margin: {
       top: "0.45in",
       bottom: "0.45in",
@@ -628,7 +640,7 @@ podman build -t tesla-service-manual-pdf .
 
 echo ""
 echo "🚀 Running scraper..."
-podman run --rm -v "$PWD:/data:z" tesla-service-manual-pdf 2>&1 | tee tesla-service-manual-run.log
+podman run --rm --shm-size=2g -v "$PWD:/data:z" tesla-service-manual-pdf 2>&1 | tee tesla-service-manual-run.log
 
 echo ""
 echo "✅ Done."
