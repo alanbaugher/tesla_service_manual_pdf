@@ -40,6 +40,7 @@ Current State - with time stamps - more pages.
 
 <img width="1158" height="913" alt="image" src="https://github.com/user-attachments/assets/b0ce4db2-11b4-4391-9b73-9c38f284177e" />  
 
-<img width="600" height="952" alt="image" src="https://github.com/user-attachments/assets/5f66e7cb-ec6c-4fca-8562-00ef9e7f692d" />   
 
+
+<img width="707" height="1125" alt="image" src="https://github.com/user-attachments/assets/0d04865b-3f7f-4e32-8507-4ac2e3dcf2d2" />  
 
